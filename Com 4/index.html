@@ -335,7 +335,6 @@
             font-size: 22px;
             margin-right: 15px;
         }
-
     </style>
 </head>
 <body>
@@ -534,14 +533,13 @@
 
                 <h2><center>Javascript</center></h2>
                 <div id="card-task">
-                    <p> Makanan 1 = Rp10000 <br>
-                        Makanan 2 = Rp25000 <br>
-                        Makanan 3 = Rp15000 <br>
-                    </p>
-                    <div id="total"></div>
-                    <p> Diskon = 10% <br>
-                    </p>
-                    <div id="total2"></div>
+                    <div id="makanan1"></div>
+                    <div id="makanan2"></div>
+                    <div id="makanan3"></div>
+                    <div id="totals"></div>
+                    <div id="totalds"></div>
+                    <div id="makanan4"></div>
+                    <div id="totalharga"></div>
                 </div>
                 <div class="post-footer">
                     <div class="like-share-comment">
@@ -556,9 +554,9 @@
 
                 <div class="post-footer-content">
                     <p class="likes">100 likes</p>
-                    <p class="names">Nathanesta <span>aaaaaa</span></p>
+                    <p class="names">Nathanesta <span>Tugas 26 Maret 2024</span></p>
                     <p class="comments">View all 10 comments</p>
-                    <p class="posting-time">23 HOURS AGO</p>
+                    <p class="posting-time">20 HOURS AGO</p>
                 </div>
 
                 <div class="add-comment">
@@ -571,6 +569,62 @@
                     </div>
                 </div>
             </div>
+
+            <div class="posts">
+                <div class="post-title">
+                    <div class="post-left">
+                        <div class="image">
+                            <img src="images/nat.jpg" width="32" height="32">
+                        </div>
+                        <div class="details">
+                            <p class="name">Nathanesta</p>
+                            <p class="location">Malang</p>
+                        </div>
+                    </div>    
+                    <div class="post-right">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div> 
+                </div>
+
+                <h2><center>Javascript</center></h2>
+                <div id="card-task">
+                    <div id="list1"></div>
+                    <div id="list2"></div>
+                    <div id="list3"></div>
+                    <div id="total"></div>
+                    <div id="total2"></div>
+                    <div id="listm"></div>
+                    <div id="listm2"></div>
+                </div>
+                <div class="post-footer">
+                    <div class="like-share-comment">
+                        <i class="far fa-heart"></i>
+                        <i class="far fa-comment"></i>
+                        <i class="far fa-paper-plane"></i>
+                    </div>
+                    <div class="save">
+                        <i class="far fa-bookmark"></i>
+                    </div>
+                </div>
+
+                <div class="post-footer-content">
+                    <p class="likes">100 likes</p>
+                    <p class="names">Nathanesta <span>Tugas 25 Maret 2024</span></p>
+                    <p class="comments">View all 10 comments</p>
+                    <p class="posting-time">20 HOURS AGO</p>
+                </div>
+
+                <div class="add-comment">
+                    <div class="left-side">
+                        <input type="text" placeholder="Add a comment...">
+                    </div>
+                    <div class="right-side">
+                        <!-- <div class="send">Kirim</div> -->
+                        <i class="far fa-smile-beam"></i>
+                    </div>
+                </div>
+            </div>
+
             <div class="posts">
                 <div class="post-title">
                     <div class="post-left">
@@ -765,16 +819,6 @@
             </div>
         </div>
     </div>
-    <script>
-        const makanan1 = 10000;
-        const makanan2 = 25000;
-        const makanan3 = 15000;
-        let total = makanan1 + makanan2 + makanan3; 
-        document.getElementById("total").innerHTML = "Harga makanan setelah dijumlah: Rp" + total;
-        const diskon = 10;
-        let total_pembayaran  = total - (total * diskon / 100);
-        document.getElementById("total2").innerHTML = "Harga makanan setelah diskon: Rp" + total_pembayaran;
-    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>
-
