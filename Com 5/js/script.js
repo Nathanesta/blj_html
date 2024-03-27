@@ -30,4 +30,4 @@ document.getElementById("makanan3").innerHTML = daftarmakanan[2].nama + " : " + 
 daftarmakanan.push({ nama: "Nasi Goreng", harga: 12000 });
 document.getElementById("makanan4").innerHTML = daftarmakanan[3].nama + " : " + daftarmakanan[3].harga;
 let total_harga = daftarmakanan[3].harga + stlhdiskon;
-document.getElementById("totalharga").innerHTML = "Total Harga : " +total_harga;
+document.getElementById("totalharga").innerHTML = "Total Harga Akhir : " +total_harga;
