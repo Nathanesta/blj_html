@@ -40,12 +40,15 @@ const dftrmkn = [
 { nama: "Nasi Goreng", harga: 12000 }
 ];
 let tot1 = 0;
+let mkn = "";
 for (let i = 0; i < dftrmkn.length; i++) {
-    document.getElementById("mkn" + (i + 1)).innerHTML = dftrmkn[i].nama + " : Rp."+dftrmkn[i].harga;
+    mkn += `<li>${dftrmkn[i].nama} : ${dftrmkn[i].harga}</li>` 
     tot1 += dftrmkn[i].harga;
 }
 const disc = tot1 * 10/100;
 const totp = tot1 - disc;
+
+document.getElementById("mkn").innerHTML = mkn;
 document.getElementById("tot1").innerHTML = "<br>Total Harga : Rp."+tot1;
 document.getElementById("totds").innerHTML = "Total Diskon 10% : Rp."+disc;
 document.getElementById("totp").innerHTML = "Total Harga Setelah Diskon : Rp."+totp;
